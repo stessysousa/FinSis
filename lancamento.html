@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>FinSis</title>
+    <meta charset="UTF-8">
+    <script src="js/funcoesLancamento.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/lancamento.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="cabecalho">
+        <h3>SisFis</h3>
+
+        <div class="direita">
+            <h6>Bem Vindo, usuário!</h6>
+            <a href="login.html">Sair</a>
+        </div>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="lancamento.html">Lançamentos</a></li>
+            <li><a href="">Pessoas</a></li>
+            <li><a href="">Configurações</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <form name="formLancamento" action="" method="submit">
+
+            <div class="bordaFormulario">
+
+                <h4>Novo Lançamento</h4>
+
+                <div class="form-group">
+                    <label> Tipo de Lançamento:
+                        <select name="tipoLancamento" class="form-control" id="tipoLancamento">
+                            <option value="Receita">Receita</option>
+                            <option value="Despesa">Despesa</option>
+                        </select>
+                    </label>
+                </div>
+
+
+                <div class="row">
+                    <div class="form-group col-lg-6">
+                        <label for="conta">Conta:</label>
+                        <input name="conta" type="text" placeholder="Energia, água" class="form-control" id="conta" />
+                    </div>
+
+                    <div class="form-group col-lg-6">
+                        <label for="valor">Valor: </label>
+                        <input name="valor" type="number" placeholder="R$ 230.00" class="form-control" id="valor" />
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="form-group col-lg-6">
+                        <label>Forma de Pagamento:
+                            <select name="formaPagamento" class="form-control" id="formaPagamento">
+                                <option value="Cartão">Cartão</option>
+                                <option value="À vista">À vista</option>
+                                <option value="Boleto">Boleto</option>
+                                <option value="Transferência">Transferência</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="form-group col-lg-6">
+                        <label>Conta Fixa:
+                            <select name="fixa" class="form-control" id="fixa">
+                                <option value="Sim">Sim</option>
+                                <option value="Não">Não</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-lg-6">
+                        <label for="data">Data:</label>
+                        <input name="data" type="date" placeholder="23/16/2019" class="form-control" id="data" />
+                    </div>
+
+                    <div class="form-group col-lg-6">
+                        <label for="responsavel">Responsável:</label>
+                        <input name="responsavel" type="text" placeholder="Ex: Maria" class="form-control"
+                            id="responsavel" />
+                    </div>
+
+                </div>
+
+                <div class="box-actions">
+                    <input type="button" class="btn btn-primary" value="Salvar Lançamento"
+                        onclick="botao_add()"></input>
+                    <input type="reset" class="btn btn-danger" value="Limpar"></input>
+                </div>
+            </div>
+        </form>
+
+        <div class="table">
+            <table>
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Lançamento</th>
+                        <th scope="col">Conta</th>
+                        <th scope="col">Valor</th>
+                        <th scope="col">Forma de Pagamento</th>
+                        <th scope="col">Conta Fixa</th>
+                        <th scope="col">Data</th>
+                        <th scope="col">Responsável</th>
+                        <th scope="col">Deletar</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>

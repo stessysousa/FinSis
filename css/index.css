@@ -1,0 +1,71 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    background-color: #121E4B;
+    width: 100%;  
+}
+
+.cabecalho > h3{
+    color: #FFFFFF; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-left: 1.5%;
+    font-size: 35px;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+/* --------------NOME BEM VINDO USUARIO-----------------*/
+.direita{
+    color: #FFFFFF; 
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+    margin-left: 75%;
+    margin-top: 0.5%;
+    
+}
+
+.direita > a{
+    color: #FFFFFF;
+
+}
+
+.direita > a:hover{
+    color: #FFFFFF;
+}
+
+/* -----------------------MENU-----------------------*/
+.menu > ul{  
+    margin: 0px;
+    padding: 0px;
+    background-color:rgb(121, 121, 218);
+    list-style: none; 
+}
+
+.menu > ul > li{
+    display: inline; 
+}
+
+.menu > ul > li > a{
+    padding: 3px 115px;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;  
+    font-weight: bold;   
+}
+
+.menu > ul > li > a:hover{
+    color: rgb(121, 121, 218);
+}
+
+.dash{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+}

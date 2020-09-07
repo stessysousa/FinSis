@@ -1,0 +1,63 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.pai{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+/* LOGIN E CADASTRO */
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(121, 121, 218);
+    width:50vw;
+    align-items: center;
+    justify-content: center;    
+}
+
+.direita{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 50vw;
+    padding: 10%;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size:70px;
+}
+
+.loginCriar{
+    text-align: center;
+    color: rgb(121, 121, 218);  
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size:40px;
+}
+
+p{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.botao > input{
+    width: 100%;
+    height: 35px;
+    margin-top: 3%;
+    color: #d9d9d9;
+    background-color: rgb(121, 121, 218);
+    border-radius: 5px;
+}
+
+.botao{
+    text-align: center;   
+}
