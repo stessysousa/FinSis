@@ -38,29 +38,68 @@
         <ul>
             <li><a href="index.html">Página Inicial</a></li>
             <li><a href="lancamento.html">Lançamentos</a></li>
-            <li><a href="">Pessoas</a></li>
+            <li><a href="">Perfis</a></li>
             <li><a href="">Configurações</a></li>
         </ul>
     </div>
 
     <div class="dash">
         <div class="row">
-            <div class="col-lg-4" style="color: green">
-                <h2>Receitas:
+            <div class="col-xs-6" style="color: green;">
+                <p>Receitas:
                     R$ 370,00
-                </h2>
+                </p>
             </div>
-            <div class="col-lg-4" style="color: red">
-                <h2>Despesas:
+            <div class="col-xs-6" style="color: red;">
+                <p>Despesas:
                     R$ 180,00
-                </h2>
+                </p>
             </div>
-            <div class="col-lg-4" style="color: rgb(176, 202, 26)">
-                <h2>Saldo Disponível:
+            <div class="col-xs-6" style="color: rgb(231, 194, 27);">
+                <p>Saldo Disponível:
                     R$ 190,00
-                </h2>
+                </p>
             </div>
         </div>
+    </div>
+
+
+    <div class="table">
+        <!-- <div class="buscar">
+            <label for="busca" placeholder="Buscar Lançamentos"></label>
+            <input type="search" id="buscar">
+            <button type="submit">Buscar</button> 
+        </div> -->
+
+        <table>
+            <thead class="thead-light">
+                <tr>
+                    <th>Nome do Lançamento</th>
+                    <th>Responsável</th>
+                    <th>Data</th>
+                    <th>Funções</th>
+                </tr>
+            </thead>
+            <tr>
+                <td scope="col">Energia</td>
+                <td scope="col">Maria</td>
+                <td scope="col">01/03/2020</td>
+                <td scope="col"><a href="visualizarLancamento.html">Visualizar</a> </td>
+            </tr>
+            <tr>
+                <td scope="col">Internet</td>
+                <td scope="col">João</td>
+                <td scope="col">01/02/2020</td>
+                <td scope="col"><a href="visualizarLancamento.html">Visualizar</a> </td>
+            </tr>
+            <tr>
+                <td scope="col">Água</td>
+                <td scope="col">João</td>
+                <td scope="col">01/04/2020</td>
+                <td scope="col"><a href="visualizarLancamento.html">Visualizar</a> </td>
+            </tr>
+
+        </table>
     </div>
 </body>
 

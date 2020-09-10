@@ -44,14 +44,14 @@
 
             <div class="bordaFormulario">
 
-                <h4>Novo Lançamento</h4>
+                <h4>Atualizar Lançamento</h4>
 
                 <div class="row">
                     <div class="col-sm">
                         <label> Tipo de Lançamento:
                             <select name="tipoLancamento" class="form-control" id="tipoLancamento">
                                 <option value=""></option>
-                                <option value="Receita">Receita</option>
+                                <option value="Receita" selected>Receita</option>
                                 <option value="Despesa">Despesa</option>
                             </select>
                         </label>
@@ -60,13 +60,13 @@
                     <div class="col-sm">
                         <label for="conta">Nome do Lançamento:
                             <input name="conta" type="text" placeholder="Energia, água" class="form-control"
-                                id="conta" /></label>
+                                id="conta" value="Conta de água"/></label>
                     </div>
 
                     <div class="col-sm">
                         <label for="valor">Valor:
                             <input name="valor" type="number" placeholder="R$ 230.00" class="form-control"
-                                id="valor" /></label>
+                                id="valor" value="20.00" /></label>
                     </div>
 
                 </div>
@@ -76,7 +76,7 @@
                         <label>Forma de Pagamento:
                             <select name="formaPagamento" class="form-control" id="formaPagamento">
                                 <option value=""></option>
-                                <option value="Cartão">Cartão</option>
+                                <option value="Cartão" selected>Cartão</option>
                                 <option value="À vista">À vista</option>
                                 <option value="Boleto">Boleto</option>
                                 <option value="Transferência">Transferência</option>
@@ -88,7 +88,7 @@
                         <label>Lançamento Fixo:
                             <select name="fixa" class="form-control" id="fixa">
                                 <option value=""></option>
-                                <option value="Sim">Sim</option>
+                                <option value="Sim" selected>Sim</option>
                                 <option value="Não">Não</option>
                             </select>
                         </label>
@@ -96,7 +96,7 @@
 
                     <div class="col-sm">
                         <label for="data">Data:
-                            <input name="data" type="date" placeholder="23/16/2019" class="form-control"
+                            <input name="data" type="date" value="02/02/20" placeholder="23/16/2019" class="form-control"
                                 id="data" /></label>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                 <div class="row">
                     <div class="col-sm">
                         <label for="responsavel">Responsável:
-                            <input name="responsavel" type="text" placeholder="Ex: Maria" class="form-control"
+                            <input name="responsavel" value="Maria" type="text" placeholder="Ex: Maria" class="form-control"
                                 id="responsavel" /></label>
                     </div>
 
@@ -118,19 +118,16 @@
                         <label>Status:
                             <select name="status" class="form-control" id="status">
                                 <option value=""></option>
-                                <option value="paga">Paga</option>
+                                <option value="Paga" selected>Paga</option>
                                 <option value="atrasada">Atrasada</option>
                                 <option value="aberta">Aberta</option>
                             </select>
                         </label>
                     </div>
+                    <div class="box-actions" style="margin-left: 25px;">
+                        <input type="button" class="btn btn-primary" value="Atualizar Lançamento"></input>
+                    </div>
                 </div>
-                <div class="box-actions">
-                    <input type="button" class="btn btn-primary" value="Salvar Lançamento"
-                        onclick="botao_add()"></input>
-                    <input type="reset" class="btn btn-danger" value="Limpar"></input>
-                </div>
-            </div>
 
     </div>
     </form>
