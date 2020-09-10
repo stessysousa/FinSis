@@ -1,0 +1,111 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    background-color: #121E4B;
+    width: 100%;  
+}
+
+
+/* --------------NOME BEM VINDO USUARIO-----------------*/
+.direita{
+    color: #FFFFFF; 
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+    margin-left: 75%;
+    margin-top: 0.5%;
+    
+}
+
+.direita > a{
+    color: #FFFFFF;
+
+}
+
+.direita > a:hover{
+    color: #FFFFFF;
+}
+/* -----------------------MENU-----------------------*/
+.menu > ul{  
+    margin: 0;
+    background-color:rgb(121, 121, 218);
+    list-style: none; 
+}
+
+.menu > ul > li{
+    display: inline; 
+}
+
+.menu > ul > li > a{
+    padding: 3px 115px;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;  
+    font-weight: bold;   
+}
+
+.menu > ul > li > a:hover{
+    color: rgb(121, 121, 218);
+}
+
+
+/* LANÇAMENTO */
+.container{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    line-height: 20px;
+    margin-top: 2%;      
+}
+
+.container select{
+    width: 300px; /* Tamanho do select, maior que o tamanho da div "div-select" */      
+}
+
+.container input{ /* TAMANHO DAS CAIXAS INPUT */
+    width: 300px;
+    padding: 5px;
+}
+
+.form-group > input{ /* CAIXAS INPUT */
+    border-radius: 5px;
+    
+}
+
+.form-group > label{ 
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;    /* ESPAÇAMENTO DA LABEL DO FORM LANÇAMENTO */
+}
+
+.box-actions{ /*  DISTÂNCIAS DOS BOTÕES DO FORM LANCAMENTO PARA OS INPUS */
+    margin-top: 30px; 
+}
+.box-actions > input{
+    width: 320px; /* TAMANHO DOS INPUTS DOS BOTOES */
+    border-radius: 5px;
+}
+
+.bordaFormulario{
+    border: 1px solid; 
+    border-color: #dcdcdc;
+    padding: 20px;
+    background-color: #DCDCDC;
+    border-radius: 20px;
+}
+
+.bordaFormulario > h4{
+    font-size: 35px ;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+/* ----------------------------------------------*/
+
+table{
+    margin-top: 5%;
+    margin-left: 15%;
+}
