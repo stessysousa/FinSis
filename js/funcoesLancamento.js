@@ -6,9 +6,14 @@ function botao_add() {
     var fixa = document.getElementById("fixa");
     var data = document.getElementById("data");
     var responsavel = document.getElementById("responsavel");
+    var status = document.getElementById("status");
 
-    
-    
-    document.querySelector("table").innerHTML += "<tr> <td> " + tipoLancamento.value + " </td> <td>"+ conta.value + "</td> <td>  " + "R$" + valor.value + "</td> <td> " + pagamento.value + " </td> <td> " + fixa.value + " </td> <td>"+ data.value + "</td> <td> " + responsavel.value + "</td>  </tr>"; //innerHTML cria html onde selecionou, usando tag que selecionei (table)
+    if (conta.value == "" || valor.value == "" || data.value == "" || tipoLancamento.value == "" || pagamento.value == "" || fixa.value == "" || responsavel.value == "") {
+        alert('Preencha todos os campos');
+        return false;
+    }
 
+    else{
+        alert('Lançamento cadastrado!!!');
+    }
 }
