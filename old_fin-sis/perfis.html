@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>FinSis</title>
+    <meta charset="UTF-8">
+
+    <script src="js/funcoesPerfis.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/perfis.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <div>
+        <div class="cabecalho">
+            <h3>SisFin</h3>
+
+            <div class="direita">
+                <h6>Bem Vindo, usuário!</h6>
+                <a href="login.html">Sair</a>
+            </div>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="lancamento.html">Lançamentos</a></li>
+                <li><a href="perfis.html">Perfis</a></li>
+                <li><a href="configurações.html">Configurações</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="bordaFormulario">
+                <h4>Gerenciar Perfis</h4>
+                <div class="row">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-sm">
+                                <label for="nome"> Nome:
+                                    <input name="nome" type="text" id="nome" class="form-control" />
+                                </label>
+                            </div>
+
+                            <div class="col-sm">
+                                <label> Tipo de Perfil:
+                                    <select name="tipoPerfil" class="form-control" id="tipoPerfil">
+                                        <option value="" selected></option>
+                                        <option value="Pessoal">Pessoal</option>
+                                        <option value="Empresarial">Empresarial</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="box-actions">
+                    <input type="button" class="btn btn-primary" value="Adicionar Perfil" onclick="novoPerfil()"></input>
+                    <input type="reset" class="btn btn-danger" value="Limpar">
+                </div>
+            </div>
+
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Perfil</th>
+
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
