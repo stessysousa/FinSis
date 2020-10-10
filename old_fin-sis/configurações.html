@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>FinSis</title>
+        <meta charset="UTF-8">
+        
+    
+        <script src="js/funcoesConfiguracoes.js"></script>
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/configurações.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    
+    <body>
+        <div>
+            <div class="cabecalho">
+                <h3>SisFis</h3>
+        
+                <div class="direita">
+                    <h6>Bem Vindo, usuário!</h6>
+                    <a href="login.html">Sair</a>
+                </div>
+            </div>
+        
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="lancamento.html">Lançamentos</a></li>
+                    <li><a href="perfis.html">Perfis</a></li>
+                    <li><a href="configurações.html">Configurações</a></li>
+                </ul>
+            </div>
+           
+            <div class="container">
+                <form method="POST">
+                    <div class="bordaFormulario">
+                        <h4>Dados de Acesso</h4>
+
+                            <div class="row">
+                                <div class="form-group col-lg-6">
+                                    <label for="nome">Nome:</label>
+                                    <input name="nome" type="text" placeholder="Ex: Maria" class="form-control" id="nome" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-lg-6">
+                                    <label for="email">Email: </label>
+                                    <input name="email" type="email" placeholder="Ex: mariaalves@gmail.com" class="form-control" id="email"/>
+                                </div>   
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-lg-6">
+                                    <label for="senha">Senha:</label>
+                                    <input name="senha" type="password" class="form-control" id="Senha" />
+                                </div>
+
+                                </div>
+                                    <div class="botao">
+                                    <input type="button" name="confirmar" value="CONFIRMAR" onclick=" validarDados()" >
+                                    <input type="reset" name="Limpar" value="LIMPAR DADOS"></input>
+                                </div>
+                            </div>  
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </body>
