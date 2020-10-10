@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="perfis-cabecalho">
-      <h3>SisFin</h3>
+      <h3>FinSis</h3>
 
       <div class="perfis-direita">
         <h6>Bem Vindo, usuário!</h6>

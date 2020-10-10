@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="lancamento-cabecalho">
-      <h3>SisFis</h3>
+      <h3>FinSis</h3>
 
       <div class="lancamento-direita">
         <h6>Bem Vindo, usuário!</h6>
@@ -137,7 +137,7 @@
                   v-model="lancamento.descricao"
                   name="descricao"
                   type="text"
-                  placeholder="Opcional"
+                  placeholder="Obrigatório"
                   class="form-control"
                   id="descricao"
               /></label>
@@ -187,12 +187,9 @@ export default {
 
   methods: {
     inserirLancamento: function () {
-      if (lancamento.tipo === "") {
-      } else {
         this.$http.post(this.baseURI, this.lancamento).then((result) => {
           this.lancamento = {};
         });
-      }
     },
 
     limparLancamento: function () {
@@ -214,7 +211,6 @@ export default {
   background-color: #121e4b;
   width: 100%;
 }
-forma
 
 /* ------------NOME FINSIS---------*/
 .lancamento-cabecalho > h3 {

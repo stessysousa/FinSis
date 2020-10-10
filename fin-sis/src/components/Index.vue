@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="index-cabecalho">
-      <h3>SisFis</h3>
+      <h3>FinSis</h3>
 
       <div class="index-direita">
         <h6>Bem Vindo, usuário!</h6>
@@ -42,18 +42,20 @@
       <table>
         <thead class="thead-light">
           <tr>
+            <th>Tipo</th>
             <th>Nome do Lançamento</th>
-            <th>Responsável</th>
             <th>Data</th>
+            <th>Perfil</th>
             <th>Funções</th>
           </tr>
         </thead>
 
         <tbody>
           <tr v-for="lancamento in lancamentos" v-bind:key="lancamento.id">
+            <td scope="col">{{lancamento.tipo}}</td>
             <td scope="col">{{lancamento.nome}}</td>
-            <td scope="col">{{lancamento.perfil}}</td>
             <td scope="col">{{lancamento.data}}</td>
+            <td scope="col">{{lancamento.perfil}}</td>
             <td scope="col">
               <a href="/visualizarLancamento">Visualizar</a>
             </td>

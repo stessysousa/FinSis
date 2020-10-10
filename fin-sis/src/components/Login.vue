@@ -32,7 +32,7 @@
             />
           </div>
 
-          <p v-if="error">Usuario ou senha incorretos!</p>
+          <p v-if="error">Usuário ou Senha Incorretos!</p>
 
           <div class="login-botao">
             <input

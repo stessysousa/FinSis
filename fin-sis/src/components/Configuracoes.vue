@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="configuracoes-cabecalho">
-            <h3>SisFis</h3>
+            <h3>FinSis</h3>
         
             <div class="configuracoes-direita">
                 <h6>Bem Vindo, usuário!</h6>
@@ -114,7 +114,6 @@ export default {};
 }
 
 
-/* LANÇAMENTO */
 .container{
     display: flex;
     flex-direction: column;    
@@ -170,6 +169,16 @@ export default {};
 table{
     margin-top: 5%;
     margin-left: 15%;
+}
+
+.configuracoes-cabecalho > h3 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-left: 1.5%;
+  font-size: 35px;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
 }
 
 

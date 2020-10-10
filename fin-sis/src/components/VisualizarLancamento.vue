@@ -2,7 +2,7 @@
   <div>
 
     <div class="visualizar-cabecalho">
-        <h3>SisFis</h3>
+        <h3>FinSis</h3>
 
         <div class="visualizar-direita">
             <h6>Bem Vindo, usuário!</h6>
